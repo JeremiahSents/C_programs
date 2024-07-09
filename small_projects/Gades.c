@@ -33,23 +33,23 @@ char get_grade(double mean)
     {
         return 'A';
     }
-    else if (mean >= 75)
+    else if (mean >= 70)
     {
         return 'B';
     }
-    else if (mean >= 70)
+    else if (mean >= 60)
     {
         return 'C';
     }
-    else if (mean >= 65)
+    else if (mean >= 50)
     {
         return 'D';
     }
-    else if (mean >= 60)
+    else if (mean >= 40)
     {
         return 'E';
     }
-    else if (mean <= 35)
+    else if (mean >= 30)
     {
         return 'F';
     }
@@ -84,7 +84,7 @@ int main()
             error_handling(mark);
             while (mark > 100 || mark < 0)
             {
-                printf("Please re-enter marks for %s :", subjects[i]);
+                printf("Please re-enter marks for %s :", subjects[j]);
                 scanf("%lf", &mark);
                 error_handling(mark);
             }
